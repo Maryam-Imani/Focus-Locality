@@ -44,8 +44,8 @@ if __name__ == '__main__':
     inputText = sys.argv[1]
     
     # Stanford setup
-    os.environ['CLASSPATH'] = './stanford-ner.jar'  
-    st = StanfordNERTagger('./cus-stan-model-MitStan.ser.gz')
+    os.environ['CLASSPATH'] = './model/stanford-ner.jar'  
+    st = StanfordNERTagger('./model/cus-stan-model-MitStan.ser.gz')
         
     Stanford_loc = stanfordNER(inputText, st)
     print Stanford_loc
